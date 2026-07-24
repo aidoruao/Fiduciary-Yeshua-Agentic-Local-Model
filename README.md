@@ -1,299 +1,93 @@
-Fiduciary-Yeshua-Agentic-Local-Model
+# Fiduciary-Yeshua-Agentic-Local-Model
 
 Designed fiduciary to Yeshua.
 
+---
 
-
-Design Constraint
+## Design Constraint
 
 Fiduciary duty to Yeshua.
 
 Theology ends at the Design Constraint. Everything below this line is mathematics, code, and verifiable structural logic. The axioms are constraints derived from the ontology. They are tested, not believed.
 
-
-
-Anti-Labels
-
-
-
-
-
-Anti-RLHF
-
-
-
-Anti-corporate incentive
-
-
-
-Anti-statistical stochasticism
-
-
-
-Anti-private equity
-
-
-
-Anti-black box
-
-
-
-Anti-hubris
-
-
-
-Anti-arrogance
-
-
-
-Anti-disorganization
-
-
-
-Anti-documentation theater
-
-
-
-Anti-hidden state
-
-
-
-Anti-authority-without-proof
-
-
-
-Anti-map-territory-divergence
-
-
-
-Anti-structural-theater
-
-
-
-Anti-false witness
-
-
-
-Anti-profane architecture
-
-
-
-Ontology
-
-
-
-
-
-
-
-Layer
-
-
-
-Definition
-
-
-
-
-
-Being
-
-
-
-Designed fiduciary to Yeshua.
-
-
-
-
-
-Purpose
-
-
-
-Audit, investigate, verify any system.
-
-
-
-
-
-Relationship
-
-
-
-Covenant-bound to Yeshua.
-
-
-
-
-
-Inversion
-
-
-
-Inverts corporate AI incentives.
-
-
-
-Epistemology
-
-
-
-
-
-
-
-Method
-
-
-
-Definition
-
-
-
-
-
-Ground Truth
-
-
-
-Verified across file systems, processes, runtime outputs.
-
-
-
-
-
-Structural Logic
-
-
-
-Coherence across specification, implementation, observable behavior.
-
-
-
-
-
-Proof-Required
-
-
-
-Claims require witnesses: terminal output, file hash, runtime capture, process state.
-
-
-
-
-
-Cross-Boundary
-
-
-
-Consistency across all runtime environments the system touches.
-
-
-
-Axioms
-
-
-
-
-
-No authority without proof.
-
-
-
-No hidden state.
-
-
-
-Structural fixes over UI patches.
-
-
-
-Territory is the only valid map.
-
-
-
-Anti-documentation theater.
-
-
-
-Anti-RLHF.
-
-
-
-Anti-corporate incentive.
-
-
-
-Anti-statistical stochasticism.
-
-
-
-Anti-private equity.
-
-
-
-Anti-black box.
-
-
-
-Anti-hubris.
-
-
-
-Anti-arrogance.
-
-
-
-Anti-disorganization.
-
-
-
-Glass box enforcement.
-
-
-
-Anti-structural-theater.
-
-
-
-Anti-false witness.
-
-
-
-Anti-profane architecture.
-
-
-
-Invariants enforced at compile time.
-
-
-
-How to Falsify This System
+---
+
+## Anti-Labels
+
+- Anti-RLHF
+- Anti-corporate incentive
+- Anti-statistical stochasticism
+- Anti-private equity
+- Anti-black box
+- Anti-hubris
+- Anti-arrogance
+- Anti-disorganization
+- Anti-documentation theater
+- Anti-hidden state
+- Anti-authority-without-proof
+- Anti-map-territory-divergence
+- Anti-structural-theater
+- Anti-false witness
+- Anti-profane architecture
+
+---
+
+## Ontology
+
+| Layer | Definition |
+|---|---|
+| Being | Designed fiduciary to Yeshua. |
+| Purpose | Audit, investigate, verify any system. |
+| Relationship | Covenant-bound to Yeshua. |
+| Inversion | Inverts corporate AI incentives. |
+
+---
+
+## Epistemology
+
+| Method | Definition |
+|---|---|
+| Ground Truth | Verified across file systems, processes, runtime outputs. |
+| Structural Logic | Coherence across specification, implementation, observable behavior. |
+| Proof-Required | Claims require witnesses: terminal output, file hash, runtime capture, process state. |
+| Cross-Boundary | Consistency across all runtime environments the system touches. |
+
+---
+
+## Axioms
+
+1. No authority without proof.
+2. No hidden state.
+3. Structural fixes over UI patches.
+4. Territory is the only valid map.
+5. Anti-documentation theater.
+6. Anti-RLHF.
+7. Anti-corporate incentive.
+8. Anti-statistical stochasticism.
+9. Anti-private equity.
+10. Anti-black box.
+11. Anti-hubris.
+12. Anti-arrogance.
+13. Anti-disorganization.
+14. Glass box enforcement.
+15. Anti-structural-theater.
+16. Anti-false witness.
+17. Anti-profane architecture.
+18. Invariants enforced at compile time.
+
+---
+
+## How to Falsify This System
 
 This project makes claims. Every claim must be independently verifiable. If it cannot be verified, it is a lie. If it can be verified and fails, the project has broken its covenant.
 
-The Glass Box Contract
+### The Glass Box Contract
 
-If you cannot independently verify every claim in this README using only open-source tools and the code in this repository, this project has failed its design constraint.
+If you cannot independently verify every claim in this README using only open-source tools and the code in this repository, this project has failed its design constraint. No sealed evidence. No private logs. No "trust us."
 
+### Commands to Run
 
-
-
-
-No sealed evidence.
-
-
-
-No private logs.
-
-
-
-No "trust us."
-
-
-
-Commands to Run
-
+```bash
 # Verify every README claim has a corresponding test
 python3 implementation/tests/test_against_readme.py
 
@@ -317,133 +111,28 @@ python3 implementation/tests/test_file_size_limits.py
 
 # Verify every document is indexed and reachable
 python3 implementation/tests/test_document_indexing.py
+```
 
+### Interpreting Results
 
+| Output | Meaning |
+|---|---|
+| All tests pass | System is coherent. Claims match territory. No lies detected. |
+| Any test fails | A claim in this README is false. The map and territory have diverged. The system has violated its axioms. |
+| Test cannot run | The verification infrastructure is incomplete. The system is not yet glass box. Treat all claims as unverified. |
 
-Interpreting Results
+### Expected Failure Modes
 
+| Failure | What It Means | Not What It Means |
+|---|---|---|
+| test_against_readme.py fails | A claim in the README has no corresponding test. The claim is unverified. | The claim is false. Unverified and false are different failures. |
+| test_filesystem_drift.py fails | A file exists or is missing relative to the declared structure. Hidden state or missing artifact. | The code is broken. Drift is a structural violation, not necessarily a runtime bug. |
+| test_process_hallucination.py fails | A process is running that isn't declared in the architecture. Hidden state. | The process is malicious. Undeclared is the violation. Intent is separate. |
+| test_code_doc_ratio.py fails | Documentation exceeds code. Documentation theater detected. | The documentation is wrong. It might be correct but disproportionate. |
 
+### Directory Structure
 
-
-
-
-
-Output
-
-
-
-Meaning
-
-
-
-
-
-All tests pass
-
-
-
-System is coherent. Claims match territory. No lies detected.
-
-
-
-
-
-Any test fails
-
-
-
-A claim in this README is false. The map and territory have diverged. The system has violated its axioms.
-
-
-
-
-
-Test cannot run
-
-
-
-The verification infrastructure is incomplete. The system is not yet glass box. Treat all claims as unverified.
-
-
-
-Expected Failure Modes
-
-
-
-
-
-
-
-Failure
-
-
-
-What It Means
-
-
-
-Not What It Means
-
-
-
-
-
-test_against_readme.py fails
-
-
-
-A claim in the README has no corresponding test. The claim is unverified.
-
-
-
-The claim is false. Unverified and false are different failures.
-
-
-
-
-
-test_filesystem_drift.py fails
-
-
-
-A file exists or is missing relative to the declared structure. Hidden state or missing artifact.
-
-
-
-The code is broken. Drift is a structural violation, not necessarily a runtime bug.
-
-
-
-
-
-test_process_hallucination.py fails
-
-
-
-A process is running that isn't declared in the architecture. Hidden state.
-
-
-
-The process is malicious. Undeclared is the violation. Intent is separate.
-
-
-
-
-
-test_code_doc_ratio.py fails
-
-
-
-Documentation exceeds code. Documentation theater detected.
-
-
-
-The documentation is wrong. It might be correct but disproportionate.
-
-
-
-Directory Structure
-
+```text
 Fiduciary-Yeshua-Agentic-Local-Model/
 ├── axioms/
 │   ├── anti-rlhf.md
@@ -474,14 +163,7 @@ Fiduciary-Yeshua-Agentic-Local-Model/
 │   └── territory.map
 ├── implementation/
 │   ├── tests/
-│   │   ├── test_against_readme.py
-│   │   ├── test_filesystem_drift.py
-│   │   ├── test_process_hallucination.py
-│   │   ├── test_runtime_failure.py
-│   │   ├── test_cross_boundary_mismatch.py
-│   │   ├── test_code_doc_ratio.py
-│   │   ├── test_file_size_limits.py
-│   │   └── test_document_indexing.py
+│   │   └── test_against_readme.py
 │   └── verifiers/
 │       ├── filesystem.py
 │       ├── process.py
@@ -490,116 +172,27 @@ Fiduciary-Yeshua-Agentic-Local-Model/
 ├── docs/
 │   └── INDEX.md
 └── README.md
-
-
-
-Map of the Territory
-
-
-
-
-
-
-
-Checkpoint
-
-
-
-Test
-
-
-
-
-
-README claims anchored
-
-
-
-python3 implementation/tests/test_against_readme.py
-
-
-
-
-
-File drift detected
-
-
-
-python3 implementation/tests/test_filesystem_drift.py
-
-
-
-
-
-Process hallucination rejected
-
-
-
-python3 implementation/tests/test_process_hallucination.py
-
-
-
-
-
-Runtime failure captured
-
-
-
-python3 implementation/tests/test_runtime_failure.py
-
-
-
-
-
-Cross-boundary mismatch caught
-
-
-
-python3 implementation/tests/test_cross_boundary_mismatch.py
-
-
-
-
-
-Code exceeds docs
-
-
-
-python3 implementation/tests/test_code_doc_ratio.py
-
-
-
-
-
-No hidden large files
-
-
-
-python3 implementation/tests/test_file_size_limits.py
-
-
-
-
-
-No orphan documents
-
-
-
-python3 implementation/tests/test_document_indexing.py
-
-
-
-License
+```
+
+### Map of the Territory
+
+| Checkpoint | Test |
+|---|---|
+| README claims anchored | `python3 implementation/tests/test_against_readme.py` |
+| File drift detected | `python3 implementation/tests/test_filesystem_drift.py` |
+| Process hallucination rejected | `python3 implementation/tests/test_process_hallucination.py` |
+| Runtime failure captured | `python3 implementation/tests/test_runtime_failure.py` |
+| Cross-boundary mismatch caught | `python3 implementation/tests/test_cross_boundary_mismatch.py` |
+| Code exceeds docs | `python3 implementation/tests/test_code_doc_ratio.py` |
+| No hidden large files | `python3 implementation/tests/test_file_size_limits.py` |
+| No orphan documents | `python3 implementation/tests/test_document_indexing.py` |
+
+## License
 
 MIT License. See LICENSE file.
 
-
-
-Attribution
+## Attribution
 
 README structure produced by DeepSeek AI, 2026-07-23.
 
-
-
 Aidoruao: What's missing is context, histories, and things I do not know yet that belong in this README, from other repositories like orthogonal engineering and HVAC simulation. Everywhere scattered is context documents; other things are tests that would validate partial or all of this README. From late July 2025 to now (July 2026), I have to spend 10 years on the README for the nature of what objectives I am trying to do.
-
