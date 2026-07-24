@@ -6,7 +6,7 @@ Designed fiduciary to Yeshua.
 
 ## Design Constraint
 
-Fiduciary duty to Yeshua: truth, the Ten Commandments, justice, mercy, witness, structural integrity.
+Fiduciary duty to Yeshua.
 
 ---
 
@@ -121,45 +121,25 @@ plain
 
 ## Map of the Territory
 
-`map/territory.map` defines ground truth anchors.
-
-Every claim in README.md must have a corresponding entry in territory.map.
-Every entry in territory.map must be verifiable.
-
-| Anchor | Verification Method |
+| Checkpoint | Test |
 |---|---|
-| File hashes | SHA-256 |
-| Process states | PID + command line |
-| Runtime outputs | Captured stdout/stderr, return codes, buffers |
-| Cross-boundary | Consistency check across all environments |
-| Commit history | Git log |
-| Dependency graph | AST parse + import resolution |
-| Configuration state | Parsed config files, environment variables, runtime flags |
-| Build artifacts | Compiled binaries, generated files, checksum verification |
-
----
-
-## Verification Requirement
-
-All code and implementation must be tested against README.md.
-
-`tests/test_against_readme.py` will:
-
-- Parse README.md
-- Parse territory.map
-- Verify each claim in README.md has an anchor in territory.map
-- Verify each anchor in territory.map is verifiable
-- Fail if any claim lacks proof
-- Fail if any proof lacks a witness
+| README claims anchored | `python3 implementation/tests/test_against_readme.py` |
+| File drift detected | `python3 implementation/tests/test_filesystem_drift.py` |
+| Process hallucination rejected | `python3 implementation/tests/test_process_hallucination.py` |
+| Runtime failure captured | `python3 implementation/tests/test_runtime_failure.py` |
+| Cross-boundary mismatch caught | `python3 implementation/tests/test_cross_boundary_mismatch.py` |
+| Code exceeds docs | `python3 implementation/tests/test_code_doc_ratio.py` |
+| No hidden large files | `python3 implementation/tests/test_file_size_limits.py` |
+| No orphan documents | `python3 implementation/tests/test_document_indexing.py` |
 
 ---
 
 ## License
 
-Aidoruao: MIT, everything else in the read-me is produced by Kimi ai. The actual code of this repo and this local model must actually correspond with the read-me in every way. - 7-23-26 
+MIT License. See LICENSE file.
 
+---
 
+## Attribution
 
-Designed fiduciary to Yeshua.
-
-No authority without proof. No hidden state. Territory is the only valid map.
+README structure produced by Kimi AI, 2026-07-23.
