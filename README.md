@@ -111,6 +111,8 @@ python3 implementation/tests/test_file_size_limits.py
 
 # Verify every document is indexed and reachable
 python3 implementation/tests/test_document_indexing.py
+```
+
 Interpreting Results
 Output	Meaning
 All tests pass	System is coherent. Claims match territory. No lies detected.
@@ -122,8 +124,8 @@ test_against_readme.py fails	A claim in the README has no corresponding test. Th
 test_filesystem_drift.py fails	A file exists or is missing relative to the declared structure. Hidden state or missing artifact.	The code is broken. Drift is a structural violation, not necessarily a runtime bug.
 test_process_hallucination.py fails	A process is running that isn't declared in the architecture. Hidden state.	The process is malicious. Undeclared is the violation. Intent is separate.
 test_code_doc_ratio.py fails	Documentation exceeds code. Documentation theater detected.	The documentation is wrong. It might be correct but disproportionate.
-Directory Structure
-text
+
+```text
 Fiduciary-Yeshua-Agentic-Local-Model/
 ├── axioms/
 │   ├── anti-rlhf.md
@@ -163,6 +165,8 @@ Fiduciary-Yeshua-Agentic-Local-Model/
 ├── docs/
 │   └── INDEX.md
 └── README.md
+```
+
 Map of the Territory
 Checkpoint	Test
 README claims anchored	python3 implementation/tests/test_against_readme.py
