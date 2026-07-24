@@ -143,3 +143,5 @@ MIT License. See LICENSE file.
 ## Attribution
 
 README structure produced by Kimi AI, 2026-07-23.
+
+Aidoruao: What's missing is context, histories, and things I do not know yet that belongs in this read-me, from other repositories like orthogonal engineering and hvac simulation. Everywhere scattered is context documents, other things are tests that would validate partial or all of this read-me, I'm gonna be honest from late July 2025 to now july 2026 I have to spend 10 years on the read-me for the nature of what objectives I am trying to do.
