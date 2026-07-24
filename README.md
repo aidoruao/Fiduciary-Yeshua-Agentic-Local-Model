@@ -163,7 +163,14 @@ Fiduciary-Yeshua-Agentic-Local-Model/
 │   └── territory.map
 ├── implementation/
 │   ├── tests/
-│   │   └── test_against_readme.py
+│   │   ├── test_against_readme.py
+│   │   ├── test_filesystem_drift.py
+│   │   ├── test_process_hallucination.py
+│   │   ├── test_runtime_failure.py
+│   │   ├── test_cross_boundary_mismatch.py
+│   │   ├── test_code_doc_ratio.py
+│   │   ├── test_file_size_limits.py
+│   │   └── test_document_indexing.py
 │   └── verifiers/
 │       ├── filesystem.py
 │       ├── process.py
